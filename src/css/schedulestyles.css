@@ -1,0 +1,92 @@
+.noEventsText {
+    position: fixed;
+    top: 20%;
+    font-size: 5em;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 150px;
+
+}
+
+.btnBack {
+    margin-bottom: 10px;
+    width: 150px;
+}
+
+.scheduleWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.99);
+    border-radius: 5px;
+    border: 1px solid gray;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 125, 255, 1) 100%);
+    overflow: scroll;
+}
+
+.scheduleWrapper h1 {
+    /* text-align: left; */
+    color: white;
+}
+
+.scheduleWrapper ul {
+    padding: 0;
+}
+
+.ulEvents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.liEvents {
+    border: 1px solid lightblue;
+    border-radius: 4px;
+    width: 60%;
+    box-shadow: 5px 5px 5px rgba(9, 9, 121, 1);
+    color: darkblue
+}
+
+.ulEvents img {
+    height: 100px;
+    width: 150px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+
+}
+
+/* .eventTitle,
+.dateWrapper {
+    padding: 5px;
+    margin-bottom: 20px;
+} */
+
+.eventTitle {
+    background-color: lightgray;
+    margin: 0;
+    color: black;
+    padding: 5px;
+    display: flex;
+}
+
+.dateWrapper {
+    background-color: lightblue;
+    padding: 5px;
+    /* background-color: rgba(9, 9, 121, 1); */
+}
+
+li:first-child {
+    margin-top: 10px;
+}
+
+li {
+    list-style-type: none;
+    font-weight: bold;
+    padding: 2px;
+}

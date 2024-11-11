@@ -32,7 +32,65 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* custom styles */
+.btnWrapper {
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* background-color: lightblue; */
+  background-color: lightgray;
+  margin-bottom: 10px;
+}
+
+#calendar {
+  padding: 1%;
+}
+
+.contentWrapper {
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 125, 255, 1) 100%);
+  color: white;
+}
+
+
+.fc-daygrid-day-frame,
+.fc-scrollgrid-sync-inner:has(.fc-daygrid-day-events) {
+  /* background-color: red; */
+}
+
+.fc .fc-toolbar {
+  justify-content: space-around;
+}
+
+th>.fc-scrollgrid-sync-inner {
+  background-color: lightgray !important;
+}
+
+/* td {
+  border: 1px solid black !important;
+} */
+
+.fc-col-header-cell-cushion {
+  color: black
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.btns {
+  color: white !important;
+}
+
+.fc-daygrid-day-number {
+  color: white !important;
 }
