@@ -61,7 +61,7 @@ export default function Schedule(props) {
                 {(props.events.length === 0) ? <h2 className='noEventsText'>No Events Yet</h2> : ''}
                 {props.events.map((value) =>
                     <li className='liEvents' key={value.id}>
-                        <img src={barragem} alt={value.title} />
+                        {/* <img src={barragem} alt={value.title} /> */}
                         <h3 className='eventTitle'><span>{value.title}</span></h3>
                         <div className="dateWrapper">
                             <span> {getDayName(new Date(value.date).getDay())}</span>

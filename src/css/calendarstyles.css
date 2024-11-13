@@ -1,0 +1,8 @@
+@media only screen and (max-width: 830px) {
+    .fc-toolbar-title {
+        font-size: 20px !important;
+        padding-left: 10px !important;
+    }
+
+    .fc-header-toolbar .fc-toolbar {}
+}

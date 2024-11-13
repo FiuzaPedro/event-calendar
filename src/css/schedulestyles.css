@@ -90,3 +90,37 @@ li {
     font-weight: bold;
     padding: 2px;
 }
+
+@media only screen and (max-width: 830px) {
+    .scheduleWrapper h1 {
+        text-align: center;
+    }
+
+    .noEventsText {
+        top: 20%;
+        font-size: 1em;
+        width: 90%;
+        padding: 50px;
+    }
+
+    .btnBack {
+        width: 20%;
+        margin-left: 40%;
+    }
+
+    .ulEvents {
+        gap: 1px;
+    }
+
+    .liEvents {
+        width: 90%;
+    }
+
+    .eventTitle {
+        font-size: 16px;
+    }
+
+    .dateWrapper {
+        font-size: 12px;
+    }
+}

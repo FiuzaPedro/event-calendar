@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.css";
 import Schedule from './Schedule';
 import $ from "jquery";
+import '../css/calendarstyles.css';
 
 var nextId = 0;
 var eventId;
@@ -97,6 +98,7 @@ export default function CustomCalendar() {
                 select={getSelectedDate}
                 events={events}
                 eventClick={handleShow}
+                longPressDelay={0}
             />
             <Modal show={show}>
                 <Modal.Header closeButton onClick={handleClose}>
