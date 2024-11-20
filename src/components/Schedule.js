@@ -9,7 +9,7 @@ import barragem from '../img/barragemStaClara.jpg';
 export default function Schedule(props) {
     // const [page, setPage] = useState();    
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
+    console.log(props.events);
     let weekDayName, dayTxt;
     function getDayName(day) {
         switch (day) {
@@ -48,6 +48,9 @@ export default function Schedule(props) {
                 return dayTxt;
         }
     }
+
+    let sortedDates = props.events.sort((a, b) => new Date(a.date) - new Date(b.date));
+
     return (
         <div className='scheduleWrapper'>
             {/* {page === 'show_calendar' && <CustomCalendar />} */}
@@ -58,8 +61,8 @@ export default function Schedule(props) {
                 <Link className={'btns'} to="/">Back</Link>
             </Button>
             <ul className='ulEvents'>
-                {(props.events.length === 0) ? <h2 className='noEventsText'>No Events Yet</h2> : ''}
-                {props.events.map((value) =>
+                {(sortedDates.length === 0) ? <h2 className='noEventsText'>No Events Yet</h2> : ''}
+                {sortedDates.map((value) =>
                     <li className='liEvents' key={value.id}>
                         {/* <img src={barragem} alt={value.title} /> */}
                         <h3 className='eventTitle'><span>{value.title}</span></h3>
